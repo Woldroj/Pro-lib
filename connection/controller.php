@@ -14,7 +14,7 @@ if (isset($_POST['register'])) {
     $check->store_result();
 
     if ($check->num_rows > 0) {
-        echo "⚠️ El usuario ya está registrado.";
+        echo "El usuario ya está registrado.";
         exit;
     }
 
@@ -26,7 +26,7 @@ if (isset($_POST['register'])) {
         header("Location: ../html/index.html"); // Cambia a la página que quieras
         exit;
     } else {
-        echo "❌ Usuario no registrado. Error: " . $conn->error;
+        echo "Usuario no registrado. Error: " . $conn->error;
     }
 
     $stmt->close();
