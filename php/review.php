@@ -1,14 +1,10 @@
-<a?php
+<?php
 session_start();
 include '../connection/db.php';
 
-// Verificamos si el usuario está logueado y obtenemos su correo
+// Verificamos si el usuario está logueado y obtenemos su nombre
 $usuario_logueado = isset($_SESSION['usuario']);
-$correo_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
-
-// Obtener comentarios
-$sql = "SELECT name, description FROM comentary ORDER BY idComentary DESC";
-$result = $conn->query($sql);
+$nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
 ?>
 
 <!DOCTYPE html>
@@ -35,26 +31,33 @@ $result = $conn->query($sql);
             <li><a href="review.php">Reseñas</a></li>
             <li><a href="#">Podcast</a></li>
             <li><a href="#">Contacto</a></li>
-            <li><a href="login.html">Inicio de Sesión</a></li>
-            <li><a href="register.html">Registrate</a></li>
+            <li><a href="../html/login.html">Inicio de Sesión</a></li>
+            <li><a href="../html/register.html">Registrate</a></li>
         </ul>
     </nav>
 
     <!-- Main content -->
     <main class="contenido">
-        <h2>Reseñas</h2>
+        <h2>Reseñas disponibles</h2>
+
         <div class="resenas">
+            <!-- Libro 1: Ana Frank -->
             <div class="libro">
-                <img src="../img/anne-frank.jpg" alt="El diario de Ana Frank">
-                <p><a href="../php/anaFrank.php">El diario de Ana Frank, de Ana Frank</a></p>
+                <a href="anaFrank.php">
+                    <img src="../img/anne-frank.jpg" alt="El diario de Ana Frank">
+                    <p>El diario de Ana Frank, de Ana Frank</p>
+                </a>
             </div>
+
+            <!-- Libro 2: Un matrimonio imposible -->
             <div class="libro">
-                <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
-                <p>Un matrimonio imposible</p>
+                <a href="matrimonio.php">
+                    <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
+                    <p>Un matrimonio imposible</p>
+                </a>
             </div>
         </div>
 
-       
         <div class="paginacion">
             <a href="#">Anterior</a> | <a href="#">Siguiente</a>
         </div>

@@ -75,26 +75,33 @@ if ($action === 'register') {
 // ========================
 if ($action === 'comment') {
     if (!isset($_SESSION['usuario'])) {
-        header("Location: ../php/login.html");
+        header("Location: ../html/login.html");
         exit();
     }
 
     $nombre = $_SESSION['usuario'];
     $comentario = trim($_POST['comentario'] ?? '');
+    $idReview = intval($_POST['idReview'] ?? 0);
 
-    if ($comentario === '') {
-        header("Location: ../php/review.php?error=Comentario vacío");
+    if ($comentario === '' || $idReview === 0) {
+        header("Location: ../php/review.php?error=Comentario vacío o libro no válido");
         exit();
     }
 
-    $stmt = $conn->prepare("INSERT INTO comentary (name, description) VALUES (?, ?)");
-    $stmt->bind_param("ss", $nombre, $comentario);
+    $stmt = $conn->prepare("INSERT INTO comentary (name, description, idReview) VALUES (?, ?, ?)");
+    $stmt->bind_param("ssi", $nombre, $comentario, $idReview);
     $stmt->execute();
     $stmt->close();
 
-
+    // Redirigir de vuelta al libro correspondiente
+    if ($idReview == 1) {
+        header("Location: ../php/anaFrank.php");
+    } elseif ($idReview == 2) {
+        header("Location: ../php/matrimonio.php");
+    } else {
+        header("Location: ../php/review.php");
+    }
     exit();
 }
 
-$conn->close();
 ?>
