@@ -44,7 +44,7 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
             <!-- Libro 1: Ana Frank -->
             <div class="libro">
                 <a href="anaFrank.php">
-                    <img src="../img/anne-frank.jpg" alt="El diario de Ana Frank">
+                    <img src="../img/anne.jpg" alt="El diario de Ana Frank">
                     <p>El diario de Ana Frank, de Ana Frank</p>
                 </a>
             </div>

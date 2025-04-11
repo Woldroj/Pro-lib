@@ -29,7 +29,7 @@ $result = $stmt->get_result();
 
     <!-- Header -->
     <header class="encabezado">
-        <img src="../img/encabezado.png" alt="El rinconcito de la lectura" class="banner">
+        <img src="../img/Banner.png" alt="El rinconcito de la lectura" class="banner">
     </header>
 
     <!-- Navigation menu -->
@@ -49,7 +49,7 @@ $result = $stmt->get_result();
         <h2>El diario de Ana Frank</h2>
         <div class="resenas">
             <div class="libro">
-                <img src="../img/anne-frank.jpg" alt="El diario de Ana Frank">
+                <img src="../img/anne.jpg" alt="El diario de Ana Frank">
                 <p>El diario de Ana Frank, de Ana Frank</p>
             </div>
         </div>

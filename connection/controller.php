@@ -104,4 +104,27 @@ if ($action === 'comment') {
     exit();
 }
 
+
+// ========================
+// CONTACT
+// ========================
+
+if (isset($_POST['contact'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    //insertar menssaje 
+    $stmt = $conn->prepare("INSERT INTO contact (name, email, message) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $name, $email, $message);
+
+    if ($stmt->execute()) {
+        header("Location: ../html/bienvenido.html");
+    } else {
+        echo "Error al enviar el mensaje: " . $conn->error;
+    }
+
+    $stmt->close();
+}
 ?>
+
