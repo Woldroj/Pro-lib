@@ -1,57 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/init.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/init.css" />
 
     <title>El Rinconcito de la Lectura</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header -->
 
     <header>
-        <div class="banner">
-            <img src="../images/Banner.png" alt="Banner">
-        </div>
+      <div class="banner">
+        <img src="../images/Banner.png" alt="Banner" />
+      </div>
 
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Reseñas</a></li>
-                    <li><a href="#">Podcast</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="login.html">Inicio de Sesión</a></li>
-                    <li><a href="register.html">Registrate</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="resenas.html">Reseñas</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="formContact.html">Contacto</a></li>
+            <li><a href="login.html">Inicio de Sesión</a></li>
+            <li><a href="register.html">Registrate</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Sentences -->
 
     <section class="Init">
-        <div class="carrusel">
-            <div class="sentence visible">“Lo esencial es invisible a los ojos.” <br> <div class="info">El Principito <br> - <br> Antoine de Saint-Exupéry </div></div>
-            <div class="sentence">“El secreto de una buena vejez no es otra cosa que un pacto honrado con la soledad.” <br> <div class="info">Cien años de soledad <br> - <br> Gabriel García Márquez </div></div>
-            <div class="sentence">“Quien controla el pasado, controla el futuro. Quien controla el presente, controla el pasado.” <br> <div class="info">1984 <br> - <br> George Orwell </div></div>
-            <div class="sentence">“Andábamos sin buscarnos pero sabiendo que andábamos para encontrarnos.” <br> <div class="info">Rayuela <br> - <br> Julio Cortázar </div></div>
-            <div class="sentence">“En vano he luchado. Ya no puedo más. Debo decirle que la amo ardientemente.” <br> <div class="info">Orgullo y prejuicio <br> - <br> Jane Austen </div></div>
+      <div class="carrusel">
+        <div class="sentence visible">
+          “Lo esencial es invisible a los ojos.” <br />
+          <div class="info">
+            El Principito <br />
+            - <br />
+            Antoine de Saint-Exupéry
+          </div>
         </div>
+        <div class="sentence">
+          “El secreto de una buena vejez no es otra cosa que un pacto honrado
+          con la soledad.” <br />
+          <div class="info">
+            Cien años de soledad <br />
+            - <br />
+            Gabriel García Márquez
+          </div>
+        </div>
+        <div class="sentence">
+          “Quien controla el pasado, controla el futuro. Quien controla el
+          presente, controla el pasado.” <br />
+          <div class="info">
+            1984 <br />
+            - <br />
+            George Orwell
+          </div>
+        </div>
+        <div class="sentence">
+          “Andábamos sin buscarnos pero sabiendo que andábamos para
+          encontrarnos.” <br />
+          <div class="info">
+            Rayuela <br />
+            - <br />
+            Julio Cortázar
+          </div>
+        </div>
+        <div class="sentence">
+          “En vano he luchado. Ya no puedo más. Debo decirle que la amo
+          ardientemente.” <br />
+          <div class="info">
+            Orgullo y prejuicio <br />
+            - <br />
+            Jane Austen
+          </div>
+        </div>
+      </div>
 
-        <script>
-            const frases = document.querySelectorAll('.sentence');
-            let indice = 0;
-        
-            setInterval(() => {
-              frases[indice].classList.remove('visible');
-              indice = (indice + 1) % frases.length;
-              frases[indice].classList.add('visible');
-            }, 6000);
-          </script>
+      <script>
+        const frases = document.querySelectorAll(".sentence");
+        let indice = 0;
+
+        setInterval(() => {
+          frases[indice].classList.remove("visible");
+          indice = (indice + 1) % frases.length;
+          frases[indice].classList.add("visible");
+        }, 6000);
+      </script>
     </section>
-    
-</body>
+  </body>
 </html>
