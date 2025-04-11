@@ -1,0 +1,102 @@
+/* General styles */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header and banner */
+.encabezado {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  box-shadow: 0px 0px 40px #dea1ca;
+}
+
+/* Navigation menu */
+.navegacion {
+  background: linear-gradient(to bottom, #fffefe, #f3bae0);
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: #191919;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+/* Main content */
+.contenido {
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.resenas {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.libro {
+  font-size: 14px;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.libro img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.libro p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.paginacion {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navegacion ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .resenas {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
