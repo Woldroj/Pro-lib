@@ -56,13 +56,15 @@ body {
 .resenas {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 100px;
     margin-top: 20px;
     flex-wrap: wrap;
 }
 
 .libro {
-    max-width: 200px;
+    font-size: 14px;
+    margin: 15px 0;  
+    line-height: 1.5; 
 }
 
 .libro img {
