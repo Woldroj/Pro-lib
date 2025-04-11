@@ -1,4 +1,4 @@
-/* register.css */
+/* login.css */
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-.register-container {
+.login-container {
     background-color: #ffffff;
     width: 400px;
     padding: 30px 40px;
@@ -19,24 +19,24 @@ body {
     text-align: center;
 }
 
-.register-container h2 {
+.login-container h2 {
     margin-bottom: 20px;
     color: #333;
 }
 
-.register-container form {
+.login-container form {
     display: flex;
     flex-direction: column;
 }
 
-.register-container label {
+.login-container label {
     text-align: left;
     margin-bottom: 5px;
     color: #555;
     font-size: 14px;
 }
 
-.register-container input {
+.login-container input {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -44,7 +44,7 @@ body {
     font-size: 14px;
 }
 
-.register-container button {
+.login-container button {
     padding: 10px;
     background-color: #b36d6d;
     color: #fff;
@@ -55,6 +55,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.register-container button:hover {
+.login-container button:hover {
     background-color: #a55b5b;
 }
