@@ -86,6 +86,15 @@ body {
     font-weight: bold;
 }
 
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f8e7f2;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .navegacion ul {
