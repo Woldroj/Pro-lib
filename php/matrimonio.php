@@ -29,7 +29,7 @@ $result = $stmt->get_result();
 
     <!-- Header -->
     <header class="encabezado">
-        <img src="../img/encabezado.png" alt="El rinconcito de la lectura" class="banner">
+        <img src="../img/Banner.png" alt="El rinconcito de la lectura" class="banner">
     </header>
 
     <!-- Navigation menu -->
