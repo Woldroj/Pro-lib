@@ -26,6 +26,20 @@
           </ul>
         </nav>
       </div>
+    </header>
+    <h2>Formulario de Contacto</h2>
+    <form action="../connection/controller.php" method="POST">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" required /><br /><br />
 
+      <label for="email">Correo</label>
+      <input type="email" name="email" required /><br /><br />
+
+      <label for="message">Mensaje</label><br />
+      <textarea name="message" rows="6" cols="40" required></textarea
+      ><br /><br />
+
+      <button type="submit" name="contact">Enviar mensaje</button>
+    </form>
   </body>
 </html>
