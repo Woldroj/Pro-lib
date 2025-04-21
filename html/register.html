@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <link rel="stylesheet" href="../css/register.css">
-  <title>Registro</title>
-</head>
-<body>
-  <div class="register-container">
-    <h2>Registro de Usuario</h2>
-    <form action="../connection/controller.php" method="POST">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/init.css" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="banner">
+        <img src="../img/Banner.png" alt="Banner" />
+      </div>
 
-      <label for="name">Nombre:</label>
-      <input type="text" name="name" required><br><br>
+      <div class="menu">
+        <nav class="navegacion">
+          <ul>
+            <li><a href="init.html">Inicio</a></li>
+            <li><a href="../php/review.php">Reseñas</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="formContact.html">Contacto</a></li>
+            <li><a href="login.html">Inicio de Sesión</a></li>
+            <li><a href="register.html">Registrate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <label for="email">Correo:</label>
-      <input type="email" name="email" required><br><br>
+    <div class="register-container">
+      <h2>Registro de Usuario</h2>
+      <form action="../connection/controller.php" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" required /><br /><br />
 
-      <label for="password">Contraseña:</label>
-      <input type="password" name="password" required><br><br>
+        <label for="email">Correo:</label>
+        <input type="email" name="email" required /><br /><br />
 
-      <button type="submit" name="register">Registrarse</button>
-    </form>
-  </div>
-</body>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" required /><br /><br />
+
+        <button type="submit" name="register">Registrarse</button>
+      </form>
+    </div>
+  </body>
 </html>
