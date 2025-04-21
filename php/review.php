@@ -14,7 +14,8 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El rinconcito de la lectura</title>
-    <link rel="stylesheet" href="../css/review.css">
+    <link rel="stylesheet" href="../css/init.css" />
+    <link rel="stylesheet" href="../css/review.css" />
 </head>
 
 <body>
@@ -24,17 +25,19 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
         <img src="../img/Banner.png" alt="El rinconcito de la lectura" class="banner">
     </header>
 
-    <!-- Navigation menu -->
-    <nav class="navegacion">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="review.php">Reseñas</a></li>
-            <li><a href="#">Podcast</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="../html/login.html">Inicio de Sesión</a></li>
-            <li><a href="../html/register.html">Registrate</a></li>
-        </ul>
-    </nav>
+    <!-- Menu -->
+    <div class="menu">
+        <nav class="navegacion">
+            <ul>
+                <li><a href="../html/init.html">Inicio</a></li>
+                <li><a href="review.php">Reseñas</a></li>
+                <li><a href="../html/podcast.html">Podcast</a></li>
+                <li><a href="../html/formContact.html">Contacto</a></li>
+                <li><a href="../html/login.html">Inicio de sesión</a></li>
+                <li><a href="../html/register.html">Registrate</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Main content -->
     <main class="contenido">
@@ -50,6 +53,13 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
             </div>
 
             <!-- Libro 2: Un matrimonio imposible -->
+            <div class="libro">
+                <a href="matrimonio.php">
+                    <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
+                    <p>Un matrimonio imposible</p>
+                </a>
+            </div>
+            <!-- Libro 3: Un matrimonio imposible -->
             <div class="libro">
                 <a href="matrimonio.php">
                     <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">

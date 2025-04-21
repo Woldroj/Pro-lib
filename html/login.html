@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/init.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <img src="../img/Banner.png" alt="Banner" />
+      </div>
 
-<head>
-  <title>Login</title>
-</head>
-
-<body>
-  <h2>Inicio de sesión</h2>
-  <form action="../connection/controller.php" method="post">
-    <!--email-->
-    <label for="email">Correo</label>
-    <input type="email" name="email" required><br><br>
-    <!--password-->
-    <label for="password">Contraseña</label>
-    <input type="password" name="password" required><br><br>
-    <!--login-->
-    <button type="submit">Iniciar sesión</button>
-  </form>
-</body>
-
+      <div class="menu">
+        <nav class="navegacion">
+          <ul>
+            <li><a href="init.html">Inicio</a></li>
+            <li><a href="../php/review.php">Reseñas</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="formContact.html">Contacto</a></li>
+            <li><a href="login.html">Inicio de Sesión</a></li>
+            <li><a href="register.html">Registrate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="login-container">
+      <h2>Inicio de sesión</h2>
+      <form action="../connection/controller.php" method="post">
+        <!--email-->
+        <label for="email">Correo</label>
+        <input type="email" name="email" required /><br /><br />
+        <!--password-->
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" required /><br /><br />
+        <!--login-->
+        <button type="submit">Iniciar sesión</button>
+      </form>
+    </div>
+    <footer>
+      &copy; 2025 El Rinconcito de la Lectura - Todos los derechos reservados
+    </footer>
+  </body>
 </html>
