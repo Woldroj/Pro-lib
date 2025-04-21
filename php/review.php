@@ -14,7 +14,6 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El rinconcito de la lectura</title>
-    <link rel="stylesheet" href="../css/init.css" />
     <link rel="stylesheet" href="../css/review.css" />
 </head>
 
@@ -22,7 +21,9 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
 
     <!-- Header -->
     <header class="encabezado">
-        <img src="../img/Banner.png" alt="El rinconcito de la lectura" class="banner">
+    <div class="banner">
+        <img src="../img/Banner.png" alt="Banner" />
+      </div>
     </header>
 
     <!-- Menu -->

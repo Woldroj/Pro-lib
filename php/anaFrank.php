@@ -30,20 +30,25 @@ $result = $stmt->get_result();
 
     <!-- Header -->
     <header class="encabezado">
-        <img src="../img/Banner.png" alt="El rinconcito de la lectura" class="banner">
+    <div class="banner">
+        <img src="../img/Banner.png" alt="Banner" />
+      </div>
     </header>
 
     <!-- Navigation menu -->
-    <nav class="navegacion">
-        <ul>
-            <li><a href="../html/init.html">Inicio</a></li>
-            <li><a href="review.php">Reseñas</a></li>
-            <li><a href="../html/podcast.html">Podcast</a></li>
-            <li><a href="../html/formContact.html">Contacto</a></li>
-            <li><a href="../html/login.html">Inicio de sesión</a></li>
-            <li><a href="../html/register.html">Registrate</a></li>
-        </ul>
-    </nav>
+   <!-- Menu -->
+   <div class="menu">
+        <nav class="navegacion">
+            <ul>
+                <li><a href="../html/init.html">Inicio</a></li>
+                <li><a href="review.php">Reseñas</a></li>
+                <li><a href="../html/podcast.html">Podcast</a></li>
+                <li><a href="../html/formContact.html">Contacto</a></li>
+                <li><a href="../html/login.html">Inicio de sesión</a></li>
+                <li><a href="../html/register.html">Registrate</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Main content -->
     <main class="contenido">
