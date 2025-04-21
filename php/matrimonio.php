@@ -94,7 +94,7 @@ $result = $stmt->get_result();
         </section>
 
         <div class="paginacion">
-            <a href="anaFrank.php">Anterior</a> | <a href="review.php">Volver a reseñas</a>
+            <a href="anaFrank.php">Anterior</a> | <a href="matrimonio.php">Siguiente</a>
         </div>
     </main>
 
