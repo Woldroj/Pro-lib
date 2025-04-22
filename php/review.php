@@ -48,21 +48,51 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
         <div class="resenas">
             <!-- Libro 1: Ana Frank -->
             <div class="libro">
-                <a href="anaFrank.php">
-                    <img src="../img/anne.jpg" alt="El diario de Ana Frank">
+                <a href="silviaBranch.php">
+                    <img src="../img/silvia.jpg" alt="el ultimo verano de silvia blanch">
                 </a>
             </div>
 
-            <!-- Libro 2: Un matrimonio imposible -->
+            <!-- book 2: la musica de los huesos -->
             <div class="libro">
-                <a href="matrimonio.php">
-                    <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
+                <a href="musicaHuesos.php">
+                    <img src="../img/musica.jpg" alt="la musica de los huesos">
                 </a>
             </div>
-            <!-- Libro 3: Un matrimonio imposible -->
+            <!-- book 3: the music of the bones -->
             <div class="libro">
-                <a href="matrimonio.php">
-                    <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
+                <a href="musicaHuesos.php">
+                    <img src="../img/escrayber.jpg" alt="escrayber">
+                </a>
+            </div>
+            <!-- book 4: brujas -->
+            <div class="libro">
+                <a href="musicaHuesos.php">
+                    <img src="../img/brujas.jpg" alt="noche de brujas">
+                </a>
+            </div>
+            <!-- book 5: escrayber -->
+            <div class="libro">
+                <a href="musicaHuesos.php">
+                    <img src="../img/matrimonio.jpg" alt="Escrayber">
+                </a>
+            </div>
+            <!-- book 6: anne frank -->
+            <div class="libro">
+                <a href="musicaHuesos.php">
+                    <img src="../img/anne.jpg" alt="ana frank">
+                </a>
+            </div>
+            <!-- book 7: anne frank -->
+            <div class="libro">
+                <a href="penitencia.jpg" alt="penitencia">
+                    <img src="../img/penitencia.jpg" alt="penitencia">
+                </a>
+            </div>
+            <!-- book 8: anne frank -->
+            <div class="libro">
+                <a href="musicaHuesos.php">
+                    <img src="../img/shari.jpg" alt="pero que has hecho">
                 </a>
             </div>
         </div>

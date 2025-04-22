@@ -2,14 +2,14 @@
 session_start();
 include '../connection/db.php';
 
-// ID del libro: "Un matrimonio imposible"
-$idReview = 2;
+// ID del libro (Ana Frank)
+$idReview = 1;
 
 // Verificamos si el usuario está logueado
 $usuario_logueado = isset($_SESSION['usuario']);
 $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
 
-// Obtener comentarios de este libro
+// Obtener comentarios SOLO del libro Ana Frank
 $stmt = $conn->prepare("SELECT name, description FROM comentary WHERE idReview = ? ORDER BY idComentary DESC");
 $stmt->bind_param("i", $idReview);
 $stmt->execute();
@@ -22,7 +22,7 @@ $result = $stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un matrimonio imposible</title>
+    <title>El último verano de Silvia Blanch</title>
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/review.css">
 </head>
@@ -37,6 +37,7 @@ $result = $stmt->get_result();
     </header>
 
     <!-- Navigation menu -->
+    <!-- Menu -->
     <div class="menu">
         <nav class="navegacion">
             <ul>
@@ -52,21 +53,31 @@ $result = $stmt->get_result();
 
     <!-- Main content -->
     <main class="contenido">
-        <h2>Un matrimonio imposible</h2>
-
+        <h2>El último verano de Silvia Blanch, de Lorena Franco</h2>
         <div class="resenas">
             <div class="libro">
-                <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
+                <img src="../img/silvia.jpg" alt="El ultimo verano de Silvia Blanch">
             </div>
         </div>
-
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Totam quasi, a, consequatur, repellat assumenda facilis dignissimos<br>
-                exercitationem labore et voluptas autem ab ducimus in. Quas pariatur<br>
-                ratione amet perferendis corrupti eum nostrum, exercitationem<br>
-                voluptates expedita ullam nihil explicabo placeat, doloribus eos<br>
-                similique earum praesentium illo, voluptatum delectus asperiores minima omnis.</p>
+            <p>Con una sinopsis trepidante y un ritmo ágil y elegante, encontramos una historia escalofriante, que
+                promete sorprender al lector en multitud de ocasiones. <br> Y es que la pluma de Lorena Franco es única
+                y
+                promete enganchar al lector de principio a fin. Y, ¿para qué negarlo? ¿cuántos thrillers han logrado
+                volver loco al lector?</p>
+
+            <p> El último verano de Silvia Blanch consta de 318 páginas. Comencé a leer casi cien páginas por día, ¿la
+                razón?, llegar a un punto de la trama que provocaba al lector a quedarse una noche en vela leyendo. Los
+                capítulos están titulados, por lo que no sabemos cuál es el número exacto. Lo que si sabemos, es que la
+                extensión de los capítulos está entre 2 y 6 páginas.Dependiendo de la voz que narre la historia.</p>
+            <br>
+            <p> Es una
+                trama contada a varias voces, Alejandra Duarte, Silvia Blanch y Jan Blanch, entre otros. Nos encontramos
+                en el pueblo de Montseny. Hace un año exacto, desapareció Silvia Blanch. Alejandra Duarte, periodista de
+                Barcelona ahora, es seleccionada para redactar un artículo en dicho pueblo, entrevistando así a sus
+                familiares y gente de la zona que conoció a la desaparecida Silvia. En este misterioso pueblo, todo el
+                mundo miente y esconde algo.
+            </p>
         </div>
 
         <!-- Comentarios -->
@@ -102,10 +113,9 @@ $result = $stmt->get_result();
         </section>
 
         <div class="paginacion">
-            <a href="anaFrank.php">Anterior</a> | <a href="matrimonio.php">Siguiente</a>
+            <a href="../php/review.php">Volver</a> | <a href="../php/musicaHuesos.php">Siguiente</a>
         </div>
     </main>
-
 </body>
 
 </html>

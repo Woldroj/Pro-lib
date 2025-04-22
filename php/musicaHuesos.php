@@ -2,14 +2,14 @@
 session_start();
 include '../connection/db.php';
 
-// ID del libro (Ana Frank)
-$idReview = 1;
+// ID del libro: "Un matrimonio imposible"
+$idReview = 2;
 
 // Verificamos si el usuario está logueado
 $usuario_logueado = isset($_SESSION['usuario']);
 $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
 
-// Obtener comentarios SOLO del libro Ana Frank
+// Obtener comentarios de este libro
 $stmt = $conn->prepare("SELECT name, description FROM comentary WHERE idReview = ? ORDER BY idComentary DESC");
 $stmt->bind_param("i", $idReview);
 $stmt->execute();
@@ -22,7 +22,7 @@ $result = $stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El diario de Ana Frank</title>
+    <title>Un matrimonio imposible</title>
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/review.css">
 </head>
@@ -37,7 +37,6 @@ $result = $stmt->get_result();
     </header>
 
     <!-- Navigation menu -->
-    <!-- Menu -->
     <div class="menu">
         <nav class="navegacion">
             <ul>
@@ -53,19 +52,29 @@ $result = $stmt->get_result();
 
     <!-- Main content -->
     <main class="contenido">
-        <h2>El diario de Ana Frank</h2>
+        <h2>La música de los huesos, de Nagore Suárez</h2>
+
         <div class="resenas">
             <div class="libro">
-                <img src="../img/anne.jpg" alt="El diario de Ana Frank">
+                <img src="../img/musica.jpg" alt="La musica de los huesos">
             </div>
         </div>
+
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Totam quasi, a, consequatur, repellat assumenda facilis dignissimos<br>
-                exercitationem labore et voluptas autem ab ducimus in. Quas pariatur<br>
-                ratione amet perferendis corrupti eum nostrum, exercitationem<br>
-                voluptates expedita ullam nihil explicabo placeat, doloribus eos<br>
-                similique earum praesentium illo, voluptatum delectus asperiores minima omnis.</p>
+            <p>Primer libro que tengo el placer de leer de Nagore Suárez. Lo cierto es que no tenía ninguna
+                expectativa, había leído la sinopsis de pasada y necesitaba saber qué escondían sus páginas. Imagina que
+                vamos de vacaciones a nuestra segunda residencia, la cual están llevando a cabo una pequeña obra. Nada
+                puede salir mal. ¿O sí? Anne, la nieta de la dueña decide pasar las vacaciones en la Ribera Navarra. Y
+                ahora viene la gran pregunta, ¿qué puede salir mal? Durante las obras se encuentran unos huesos. No es
+                ninguna sorpresa cuando la nieta de la dueña les relata que hace unos años enterraron al perro de un
+                amigo. Pero esos huesos no son de perro. Y aquí comienza la verdadera historia.
+
+                He de reconocer que me sorprendía de la rapidez de la lectura. En un día pude leerme más de cien páginas
+                sin darme cuenta. Imaginad el enganche. La pluma de Suárez es pura magia y elegancia. Es la gran promesa
+                de la novela negra y de intriga. Diría que una de las mejores. Y este solo es su primer libro. Imaginad
+                todo lo que la autora puede dar por cada historia que publique y cada oportunidad que le den. Podría
+                consagrarse como la reina del thriller.
+            </p>
         </div>
 
         <!-- Comentarios -->
@@ -101,9 +110,10 @@ $result = $stmt->get_result();
         </section>
 
         <div class="paginacion">
-            <a href="../php/review.php">Volver</a> | <a href="../php/matrimonio.php">Siguiente</a>
+            <a href="anaFrank.php">Anterior</a> | <a href="silviaBranch.php">Siguiente</a>
         </div>
     </main>
+
 </body>
 
 </html>
