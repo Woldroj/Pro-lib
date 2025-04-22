@@ -56,7 +56,6 @@ $result = $stmt->get_result();
         <div class="resenas">
             <div class="libro">
                 <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
-                <p>Un matrimonio imposible</p>
             </div>
         </div>
 

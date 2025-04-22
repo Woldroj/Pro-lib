@@ -56,7 +56,6 @@ $result = $stmt->get_result();
         <div class="resenas">
             <div class="libro">
                 <img src="../img/anne.jpg" alt="El diario de Ana Frank">
-                <p>El diario de Ana Frank, de Ana Frank</p>
             </div>
         </div>
         <div>
