@@ -6,8 +6,70 @@ body {
   background: #f4e7e7;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+header .banner img {
+  display: block;
+  width: 105%;
+  height: 350px;
+  box-shadow: 0px 0px 40px #dea1ca;
+}
+
+.banner {
+  position: relative;
+}
+
+.rrss {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.banner .rrss img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: transform 0.3s ease;
+}
+
+.rrss img:hover {
+  transform: scale(1.2);
+}
+
+.menu {
+  display: flex;
+  gap: 4vw;
+  justify-content: center;
+  background: linear-gradient(to bottom, #fffefe, #f3bae0);
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4vw;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #191919;
+}
+
+.contenido {
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
+  padding: 60px;
 }
 
 .register-container {
@@ -17,6 +79,8 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin-left: 35%;
+  margin-top: 20px;
 }
 
 .register-container h2 {
@@ -57,4 +121,12 @@ body {
 
 .register-container button:hover {
   background-color: #a55b5b;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f8e7f2;
 }
