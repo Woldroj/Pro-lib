@@ -5,8 +5,7 @@ body {
   background-color: #f4e7e7;
 }
 
-/* Menu */
-
+/* Header */
 header .banner img {
   display: block;
   width: 105%;
@@ -16,31 +15,6 @@ header .banner img {
 
 .banner {
   position: relative;
-}
-
-.rrss {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  display: flex;
-  gap: 10px;
-  z-index: 10;
-}
-
-.banner .rrss img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 3px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  transition: transform 0.3s ease;
-}
-
-.rrss img:hover {
-  transform: scale(1.2);
 }
 
 .menu {
@@ -62,101 +36,81 @@ nav ul li a {
   color: #191919;
 }
 
-/* Init */
-
-.Init {
-  margin: 100px;
-  display: flex;
-  justify-content: center;
-}
-
+/* Frases del carrusel */
 .carrusel {
-  background-color: #fff;
+  background-color: #fffdfd;
   position: relative;
   width: 600px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #ffffff;
-  box-shadow: 0px 0px 10px #dcdbdc;
-  border-radius: 10px;
-  padding: 20px;
-  overflow: hidden;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.sentence {
-  position: absolute;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  text-align: center;
+.carrusel .sentence {
+  display: none;
   font-style: italic;
-  font-size: 1.5em;
-  padding: 10px;
-}
-
-.info {
-  font-style: normal;
-  padding: 10px;
-  font-size: 0.8em;
-}
-
-.visible {
-  opacity: 1;
-}
-
-/* Review */
-
-.contenido {
-  padding: 20px;
-  text-align: center;
-  flex: 1;
-}
-
-.resenas {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-
-.libro {
-  font-size: 14px;
-  margin: 15px 0;
+  font-size: 1.3em;
   line-height: 1.5;
+  padding: 20px;
+  border: 1px solid #f3bae0;
+  background-color: #fff0f6;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  color: #333;
+  transition: opacity 0.5s ease;
 }
 
-.libro img {
-  width: 150px;
-  height: auto;
+.carrusel .sentence.visible {
   display: block;
-  margin: 0 auto 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.libro p {
-  font-size: 14px;
-  margin: 5px 0;
+/* Redes sociales dentro del footer */
+.rrss {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: 10px;
 }
 
-.paginacion {
-  margin-top: 30px;
-  font-weight: bold;
+.rrss a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.rrss a i {
+  font-size: 24px;
+  color: #333333;
+  transition: opacity 0.3s ease;
+}
+
+.rrss a:hover i {
+  opacity: 0.7;
 }
 
 /* Footer */
-
 footer {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  align-items: center;
+  padding: 20px;
   background-color: #f8e7f2;
+  color: #333333;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* J¡joint container for text and icons in the footer */
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Form */
-
 .form-container {
   margin-left: 35%;
   margin-top: 20px;

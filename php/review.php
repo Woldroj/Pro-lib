@@ -15,6 +15,8 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El rinconcito de la lectura</title>
     <link rel="stylesheet" href="../css/review.css" />
+    <!-- Asegúrate de cargar Font Awesome para los íconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
@@ -45,23 +47,68 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
         <h2>Reseñas disponibles</h2>
 
         <div class="resenas">
-            <!-- Libro 1: Ana Frank -->
+            <!-- Libro 1: silvia branch -->
             <div class="libro">
+<<<<<<< HEAD
                 <a href="anaFrank.php">
                     <img src="../img/anne.jpg" alt="El diario de Ana Frank">
+=======
+                <a href="silviaBranch.php">
+                    <img src="../img/silvia.jpg" alt="el ultimo verano de silvia blanch">
+>>>>>>> origin/monica
                 </a>
             </div>
 
-            <!-- Libro 2: Un matrimonio imposible -->
+            <!-- book 2: the music of the bones -->
             <div class="libro">
+<<<<<<< HEAD
                 <a href="matrimonio.php">
                     <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
+=======
+                <a href="musicaHuesos.php">
+                    <img src="../img/musica.jpg" alt="la musica de los huesos">
+>>>>>>> origin/monica
                 </a>
             </div>
-            <!-- Libro 3: Un matrimonio imposible -->
+            <!-- book 3: escrayber -->
             <div class="libro">
+<<<<<<< HEAD
                 <a href="matrimonio.php">
                     <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
+=======
+                <a href="musicaHuesos.php">
+                    <img src="../img/escrayber.jpg" alt="escrayber">
+                </a>
+            </div>
+            <!-- book 4: witches-->
+            <div class="libro">
+                <a href="musicaHuesos.php">
+                    <img src="../img/brujas.jpg" alt="noche de brujas">
+                </a>
+            </div>
+            <!-- book 5: an impossible marriage -->
+            <div class="libro">
+                <a href="musicaHuesos.php">
+                    <img src="../img/matrimonio.jpg" alt="Escrayber">
+                </a>
+            </div>
+            <!-- book 6: anne frank -->
+            <div class="libro">
+                <a href="musicaHuesos.php">
+                    <img src="../img/anne.jpg" alt="ana frank">
+                </a>
+            </div>
+            <!-- book 7: penance -->
+            <div class="libro">
+                <a href="penitencia.jpg" alt="penitencia">
+                    <img src="../img/penitencia.jpg" alt="penitencia">
+                </a>
+            </div>
+            <!-- book 8: what have you done? -->
+            <div class="libro">
+                <a href="musicaHuesos.php">
+                    <img src="../img/shari.jpg" alt="pero que has hecho">
+>>>>>>> origin/monica
                 </a>
             </div>
         </div>
@@ -71,6 +118,24 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
         </div>
     </main>
 
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2025 El Rinconcito de la Lectura - Todos los derechos reservados
+        </p>
+        <!-- Redes sociales -->
+        <div class="rrss">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.telegram.org" target="_blank">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>

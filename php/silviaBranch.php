@@ -22,7 +22,8 @@ $result = $stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El diario de Ana Frank</title>
+    <title>El último verano de Silvia Blanch</title>
+    <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/review.css">
 </head>
 
@@ -30,6 +31,7 @@ $result = $stmt->get_result();
 
     <!-- Header -->
     <header class="encabezado">
+<<<<<<< HEAD:php/anaFrank.php
     <div class="banner">
         <img src="../img/Banner.png" alt="Banner" />
       </div>
@@ -38,6 +40,16 @@ $result = $stmt->get_result();
     <!-- Navigation menu -->
    <!-- Menu -->
    <div class="menu">
+=======
+        <div class="banner">
+            <img src="../img/Banner.png" alt="Banner" />
+        </div>
+    </header>
+
+    <!-- Navigation menu -->
+    <!-- Menu -->
+    <div class="menu">
+>>>>>>> origin/monica:php/silviaBranch.php
         <nav class="navegacion">
             <ul>
                 <li><a href="../html/init.html">Inicio</a></li>
@@ -52,19 +64,35 @@ $result = $stmt->get_result();
 
     <!-- Main content -->
     <main class="contenido">
-        <h2>El diario de Ana Frank</h2>
+        <h2>El último verano de Silvia Blanch, de Lorena Franco</h2>
         <div class="resenas">
             <div class="libro">
+<<<<<<< HEAD:php/anaFrank.php
                 <img src="../img/anne.jpg" alt="El diario de Ana Frank">
+=======
+                <img src="../img/silvia.jpg" alt="El ultimo verano de Silvia Blanch">
+>>>>>>> origin/monica:php/silviaBranch.php
             </div>
         </div>
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Totam quasi, a, consequatur, repellat assumenda facilis dignissimos<br>
-                exercitationem labore et voluptas autem ab ducimus in. Quas pariatur<br>
-                ratione amet perferendis corrupti eum nostrum, exercitationem<br>
-                voluptates expedita ullam nihil explicabo placeat, doloribus eos<br>
-                similique earum praesentium illo, voluptatum delectus asperiores minima omnis.</p>
+            <p>Con una sinopsis trepidante y un ritmo ágil y elegante, encontramos una historia escalofriante, que
+                promete sorprender al lector en multitud de ocasiones. <br> Y es que la pluma de Lorena Franco es única
+                y
+                promete enganchar al lector de principio a fin. Y, ¿para qué negarlo? ¿cuántos thrillers han logrado
+                volver loco al lector?</p>
+
+            <p> El último verano de Silvia Blanch consta de 318 páginas. Comencé a leer casi cien páginas por día, ¿la
+                razón?, llegar a un punto de la trama que provocaba al lector a quedarse una noche en vela leyendo. Los
+                capítulos están titulados, por lo que no sabemos cuál es el número exacto. Lo que si sabemos, es que la
+                extensión de los capítulos está entre 2 y 6 páginas.Dependiendo de la voz que narre la historia.</p>
+            <br>
+            <p> Es una
+                trama contada a varias voces, Alejandra Duarte, Silvia Blanch y Jan Blanch, entre otros. Nos encontramos
+                en el pueblo de Montseny. Hace un año exacto, desapareció Silvia Blanch. Alejandra Duarte, periodista de
+                Barcelona ahora, es seleccionada para redactar un artículo en dicho pueblo, entrevistando así a sus
+                familiares y gente de la zona que conoció a la desaparecida Silvia. En este misterioso pueblo, todo el
+                mundo miente y esconde algo.
+            </p>
         </div>
 
         <!-- Comentarios -->
@@ -100,7 +128,7 @@ $result = $stmt->get_result();
         </section>
 
         <div class="paginacion">
-            <a href="../php/review.php">Volver</a> | <a href="../php/matrimonio.php">Siguiente</a>
+            <a href="../php/review.php">Volver</a> | <a href="../php/musicaHuesos.php">Siguiente</a>
         </div>
     </main>
 </body>
