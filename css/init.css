@@ -70,18 +70,18 @@ nav ul li a {
 .rrss {
   display: flex;
   gap: 10px;
-  align-items: center; /* Alinear los íconos con el texto */
+  align-items: center;
   margin-left: 10px;
 }
 
 .rrss a {
-  display: inline-block; /* Asegura que los enlaces sean en línea */
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  display: inline-block;
+  text-decoration: none;
 }
 
 .rrss a i {
-  font-size: 24px; /* Aumentar el tamaño de los íconos */
-  color: #333333; /* Íconos oscuros para que se vean sobre fondo claro */
+  font-size: 24px;
+  color: #333333;
   transition: opacity 0.3s ease;
 }
 
@@ -103,14 +103,14 @@ footer {
   z-index: 10;
 }
 
-/* Contenedor conjunto para texto e iconos en el footer */
+/* J¡joint container for text and icons in the footer */
 .footer-content {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-/* Formulario */
+/* Form */
 .form-container {
   margin-left: 35%;
   margin-top: 20px;

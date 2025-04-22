@@ -60,10 +60,10 @@ body {
 
 .resenas {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
-  gap: 0; /* Eliminar espacios entre las imágenes */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
   margin-top: 20px;
-  justify-items: center; /* Centra las imágenes */
+  justify-items: center;
 }
 
 .libro {
@@ -73,11 +73,11 @@ body {
 }
 
 .libro img {
-  width: 250px; /* Asegura que la imagen ocupe todo el espacio disponible en la celda */
+  width: 250px;
   height: auto;
   display: block;
-  margin: 0; /* Eliminar márgenes */
-  padding: 0; /* Eliminar relleno */
+  margin: 0;
+  padding: 0;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -101,15 +101,12 @@ body {
   }
 
   .resenas {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 columnas en pantallas pequeñas */
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
   .menu {
     flex-direction: column;
-    gap: 20px; /* Aumentar espacio entre los elementos en pantallas pequeñas */
+    gap: 20px;
   }
 }
