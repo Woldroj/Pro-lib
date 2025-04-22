@@ -48,7 +48,7 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
             <div class="libro">
                 <a href="anaFrank.php">
                     <img src="../img/anne.jpg" alt="El diario de Ana Frank">
-                    <p>El diario de Ana Frank, de Ana Frank</p>
+
                 </a>
             </div>
 
@@ -56,14 +56,14 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
             <div class="libro">
                 <a href="matrimonio.php">
                     <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
-                    <p>Un matrimonio imposible</p>
+
                 </a>
             </div>
             <!-- Libro 3: Un matrimonio imposible -->
             <div class="libro">
                 <a href="matrimonio.php">
                     <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
-                    <p>Un matrimonio imposible</p>
+
                 </a>
             </div>
         </div>
