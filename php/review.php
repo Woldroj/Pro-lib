@@ -16,6 +16,8 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
     <title>El rinconcito de la lectura</title>
     <link rel="stylesheet" href="../css/init.css" />
     <link rel="stylesheet" href="../css/review.css" />
+    <!-- Asegúrate de cargar Font Awesome para los íconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
@@ -48,7 +50,6 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
             <div class="libro">
                 <a href="anaFrank.php">
                     <img src="../img/anne.jpg" alt="El diario de Ana Frank">
-
                 </a>
             </div>
 
@@ -56,14 +57,12 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
             <div class="libro">
                 <a href="matrimonio.php">
                     <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
-
                 </a>
             </div>
             <!-- Libro 3: Un matrimonio imposible -->
             <div class="libro">
                 <a href="matrimonio.php">
                     <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
-
                 </a>
             </div>
         </div>
@@ -73,6 +72,24 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
         </div>
     </main>
 
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2025 El Rinconcito de la Lectura - Todos los derechos reservados
+        </p>
+        <!-- Redes sociales -->
+        <div class="rrss">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.telegram.org" target="_blank">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>

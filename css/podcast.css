@@ -58,11 +58,3 @@ h2 {
 .podcast p a:hover {
   text-decoration: underline;
 }
-
-/* footer */
-footer {
-  background-color: #f8e7f2;
-  color: #ecf0f1;
-  text-align: center;
-  padding: 10px;
-}
