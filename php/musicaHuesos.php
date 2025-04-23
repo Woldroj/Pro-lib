@@ -23,6 +23,7 @@ $result = $stmt->get_result();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Un matrimonio imposible</title>
+    <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/review.css">
 </head>
 
@@ -30,9 +31,15 @@ $result = $stmt->get_result();
 
     <!-- Header -->
     <header class="encabezado">
+<<<<<<< HEAD:php/matrimonio.php
     <div class="banner">
         <img src="../img/Banner.png" alt="Banner" />
       </div>
+=======
+        <div class="banner">
+            <img src="../img/Banner.png" alt="Banner" />
+        </div>
+>>>>>>> origin/monica:php/musicaHuesos.php
     </header>
 
     <!-- Navigation menu -->
@@ -51,22 +58,33 @@ $result = $stmt->get_result();
 
     <!-- Main content -->
     <main class="contenido">
-        <h2>Un matrimonio imposible</h2>
+        <h2>La música de los huesos, de Nagore Suárez</h2>
 
         <div class="resenas">
             <div class="libro">
+<<<<<<< HEAD:php/matrimonio.php
                 <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
-                <p>Un matrimonio imposible</p>
+=======
+                <img src="../img/musica.jpg" alt="La musica de los huesos">
+>>>>>>> origin/monica:php/musicaHuesos.php
             </div>
         </div>
 
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Totam quasi, a, consequatur, repellat assumenda facilis dignissimos<br>
-                exercitationem labore et voluptas autem ab ducimus in. Quas pariatur<br>
-                ratione amet perferendis corrupti eum nostrum, exercitationem<br>
-                voluptates expedita ullam nihil explicabo placeat, doloribus eos<br>
-                similique earum praesentium illo, voluptatum delectus asperiores minima omnis.</p>
+            <p>Primer libro que tengo el placer de leer de Nagore Suárez. Lo cierto es que no tenía ninguna
+                expectativa, había leído la sinopsis de pasada y necesitaba saber qué escondían sus páginas. Imagina que
+                vamos de vacaciones a nuestra segunda residencia, la cual están llevando a cabo una pequeña obra. Nada
+                puede salir mal. ¿O sí? Anne, la nieta de la dueña decide pasar las vacaciones en la Ribera Navarra. Y
+                ahora viene la gran pregunta, ¿qué puede salir mal? Durante las obras se encuentran unos huesos. No es
+                ninguna sorpresa cuando la nieta de la dueña les relata que hace unos años enterraron al perro de un
+                amigo. Pero esos huesos no son de perro. Y aquí comienza la verdadera historia.
+
+                He de reconocer que me sorprendía de la rapidez de la lectura. En un día pude leerme más de cien páginas
+                sin darme cuenta. Imaginad el enganche. La pluma de Suárez es pura magia y elegancia. Es la gran promesa
+                de la novela negra y de intriga. Diría que una de las mejores. Y este solo es su primer libro. Imaginad
+                todo lo que la autora puede dar por cada historia que publique y cada oportunidad que le den. Podría
+                consagrarse como la reina del thriller.
+            </p>
         </div>
 
         <!-- Comentarios -->
@@ -102,7 +120,11 @@ $result = $stmt->get_result();
         </section>
 
         <div class="paginacion">
+<<<<<<< HEAD:php/matrimonio.php
             <a href="anaFrank.php">Anterior</a> | <a href="matrimonio.php">Siguiente</a>
+=======
+            <a href="anaFrank.php">Anterior</a> | <a href="silviaBranch.php">Siguiente</a>
+>>>>>>> origin/monica:php/musicaHuesos.php
         </div>
     </main>
 

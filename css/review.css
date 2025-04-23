@@ -13,6 +13,7 @@ header .banner img {
   box-shadow: 0px 0px 40px #dea1ca;
 }
 
+<<<<<<< HEAD
 .banner {
   position: relative;
 }
@@ -43,6 +44,9 @@ header .banner img {
 }
 
 /* Menu */
+=======
+/* Main Menu */
+>>>>>>> origin/monica
 .menu {
   display: flex;
   gap: 4vw;
@@ -53,7 +57,11 @@ header .banner img {
   align-items: center;
 }
 
+<<<<<<< HEAD
 nav ul {
+=======
+.navegacion ul {
+>>>>>>> origin/monica
   list-style: none;
   display: flex;
   gap: 4vw;
@@ -74,11 +82,11 @@ nav ul li a {
 }
 
 .resenas {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
   margin-top: 20px;
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 .libro {
@@ -88,10 +96,11 @@ nav ul li a {
 }
 
 .libro img {
-  width: 150px;
+  width: 250px;
   height: auto;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0;
+  padding: 0;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -106,6 +115,7 @@ nav ul li a {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* Footer */
 footer {
   display: flex;
@@ -167,6 +177,9 @@ footer {
 }
 
 /* Responsive */
+=======
+/* Responsive design */
+>>>>>>> origin/monica
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -175,8 +188,12 @@ footer {
   }
 
   .resenas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .menu {
     flex-direction: column;
-    align-items: center;
     gap: 20px;
   }
 }
