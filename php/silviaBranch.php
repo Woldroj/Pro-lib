@@ -61,7 +61,7 @@ $result = $stmt->get_result();
                         <img src="../img/silvia.jpg" alt="Portada Silvia Blanch" />
                     </div>
                     <div class="flip-card-back">
-                        <img src="../img/silvia.jpg" alt="Contraportada Silvia Blanch" />
+                        <img src="../img/contraportadaSilvia.jpg" alt="Contraportada Silvia Blanch" />
                     </div>
                 </div>
             </div>
