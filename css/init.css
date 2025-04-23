@@ -21,10 +21,7 @@ header .banner img {
   width: 100%;
 }
 
-<<<<<<< HEAD
 /* Menu */
-=======
->>>>>>> e65dec9cc3d29a34e2ed6ab1f80754f9db0cc9d3
 .menu {
   display: flex;
   justify-content: center;
@@ -46,21 +43,12 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #191919;
-<<<<<<< HEAD
   padding: 10px;
 }
 
 /* Carrusel */
 .carrusel {
   background-color: #fffdfd;
-=======
-}
-
-/* Frases del carrusel */
-.carrusel {
-  background-color: #fffdfd;
-  position: relative;
->>>>>>> e65dec9cc3d29a34e2ed6ab1f80754f9db0cc9d3
   width: 600px;
   margin: 100px auto;
   padding: 30px;
@@ -87,34 +75,10 @@ nav ul li a {
   display: block;
 }
 
-<<<<<<< HEAD
 .info {
   font-style: normal;
   font-size: 0.85em;
   margin-top: 10px;
-=======
-/* Redes sociales dentro del footer */
-.rrss {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-left: 10px;
-}
-
-.rrss a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.rrss a i {
-  font-size: 24px;
-  color: #333333;
-  transition: opacity 0.3s ease;
-}
-
-.rrss a:hover i {
-  opacity: 0.7;
->>>>>>> e65dec9cc3d29a34e2ed6ab1f80754f9db0cc9d3
 }
 
 /* Footer */
@@ -122,39 +86,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   flex-wrap: wrap;
   gap: 10px;
-=======
->>>>>>> e65dec9cc3d29a34e2ed6ab1f80754f9db0cc9d3
   padding: 20px;
   background-color: #f8e7f2;
   color: #333333;
   font-size: 14px;
-<<<<<<< HEAD
-=======
-  text-align: center;
-  position: relative;
-  z-index: 10;
-}
-
-/* J¡joint container for text and icons in the footer */
-.footer-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-/* Form */
-.form-container {
-  margin-left: 35%;
-  margin-top: 20px;
-  background-color: #ffffff;
-  width: 400px;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
->>>>>>> e65dec9cc3d29a34e2ed6ab1f80754f9db0cc9d3
   text-align: center;
 }
 

@@ -1,77 +1,54 @@
+/* General styles */
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  height: 100vh;
   margin: 0;
-  background-color: #f4e7e7;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Banner */
-header .banner img {
+.banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.banner img {
   display: block;
   width: 105%;
   height: 350px;
+  object-fit: cover;
   box-shadow: 0px 0px 40px #dea1ca;
 }
 
-<<<<<<< HEAD
-.banner {
-  position: relative;
-}
-
-.rrss {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  display: flex;
-  gap: 10px;
-  z-index: 10;
-}
-
-.banner .rrss img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 3px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  transition: transform 0.3s ease;
-}
-
-.rrss img:hover {
-  transform: scale(1.2);
-}
-
-/* Menu */
-=======
 /* Main Menu */
->>>>>>> origin/monica
 .menu {
   display: flex;
   gap: 4vw;
   justify-content: center;
   background: linear-gradient(to bottom, #fffefe, #f3bae0);
-  border-radius: 5px;
-  height: 50px;
+  height: 60px;
   align-items: center;
+  border-radius: 5px;
 }
 
-<<<<<<< HEAD
-nav ul {
-=======
 .navegacion ul {
->>>>>>> origin/monica
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 4vw;
   margin: 0;
   padding: 0;
 }
 
-nav ul li a {
+.navegacion ul li a {
   text-decoration: none;
   color: #191919;
+  padding: 10px 15px;
+  display: block;
 }
 
 /* Main content */
@@ -115,73 +92,9 @@ nav ul li a {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-/* Footer */
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  background-color: #f8e7f2;
-}
-
-/* Form (si llegas a reutilizar) */
-.form-container {
-  margin-left: 35%;
-  margin-top: 20px;
-  background-color: #ffffff;
-  width: 400px;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.form-container h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.form-container form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-container label {
-  text-align: left;
-  margin-bottom: 5px;
-  color: #555;
-  font-size: 14px;
-}
-
-.form-container input {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.form-container button {
-  padding: 10px;
-  background-color: #b36d6d;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.form-container button:hover {
-  background-color: #a55b5b;
-}
-
-/* Responsive */
-=======
 /* Responsive design */
->>>>>>> origin/monica
 @media (max-width: 768px) {
-  nav ul {
+  .navegacion ul {
     flex-direction: column;
     align-items: center;
     gap: 10px;

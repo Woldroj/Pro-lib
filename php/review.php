@@ -16,7 +16,6 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
     <title>El rinconcito de la lectura</title>
     <link rel="stylesheet" href="../css/init.css" />
     <link rel="stylesheet" href="../css/review.css" />
-    <!-- Asegúrate de cargar Font Awesome para los íconos de redes sociales -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
@@ -24,9 +23,7 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
 
     <!-- Header -->
     <header class="encabezado">
-        <div class="banner">
-            <img src="../img/Banner.png" alt="Banner" />
-        </div>
+        <img src="../img/Banner.png" alt="El rinconcito de la lectura" class="banner">
     </header>
 
     <!-- Menu -->
@@ -50,33 +47,19 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
         <div class="resenas">
             <!-- Libro 1: silvia branch -->
             <div class="libro">
-<<<<<<< HEAD
-                <a href="anaFrank.php">
-                    <img src="../img/anne.jpg" alt="El diario de Ana Frank">
-=======
                 <a href="silviaBranch.php">
                     <img src="../img/silvia.jpg" alt="el ultimo verano de silvia blanch">
->>>>>>> origin/monica
                 </a>
             </div>
 
             <!-- book 2: the music of the bones -->
             <div class="libro">
-<<<<<<< HEAD
-                <a href="matrimonio.php">
-                    <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
-=======
                 <a href="musicaHuesos.php">
                     <img src="../img/musica.jpg" alt="la musica de los huesos">
->>>>>>> origin/monica
                 </a>
             </div>
             <!-- book 3: escrayber -->
             <div class="libro">
-<<<<<<< HEAD
-                <a href="matrimonio.php">
-                    <img src="../img/matrimonio.jpg" alt="Un matrimonio imposible">
-=======
                 <a href="musicaHuesos.php">
                     <img src="../img/escrayber.jpg" alt="escrayber">
                 </a>
@@ -101,7 +84,7 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
             </div>
             <!-- book 7: penance -->
             <div class="libro">
-                <a href="penitencia.jpg" alt="penitencia">
+                <a href="musicaHuesos.php" alt="penitencia">
                     <img src="../img/penitencia.jpg" alt="penitencia">
                 </a>
             </div>
@@ -109,7 +92,6 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
             <div class="libro">
                 <a href="musicaHuesos.php">
                     <img src="../img/shari.jpg" alt="pero que has hecho">
->>>>>>> origin/monica
                 </a>
             </div>
         </div>
@@ -122,7 +104,7 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
     <!-- Footer -->
     <footer>
         <p>
-            &copy; 2025 El Rinconcito de la Lectura - Todos los derechos reservados
+            &copy; 2025 El rinconcito de la lectura - Todos los derechos reservados
         </p>
         <!-- Redes sociales -->
         <div class="rrss">
