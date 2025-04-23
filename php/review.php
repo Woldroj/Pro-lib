@@ -85,7 +85,7 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
             </div>
             <!-- book 7: penance -->
             <div class="libro">
-                <a href="penitencia.jpg" alt="penitencia">
+                <a href="musicaHuesos.php" alt="penitencia">
                     <img src="../img/penitencia.jpg" alt="penitencia">
                 </a>
             </div>
