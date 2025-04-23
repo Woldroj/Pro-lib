@@ -104,7 +104,7 @@ $nombre_usuario = $usuario_logueado ? $_SESSION['usuario'] : null;
     <!-- Footer -->
     <footer>
         <p>
-            &copy; 2025 El Rinconcito de la Lectura - Todos los derechos reservados
+            &copy; 2025 El rinconcito de la lectura - Todos los derechos reservados
         </p>
         <!-- Redes sociales -->
         <div class="rrss">
