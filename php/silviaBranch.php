@@ -55,30 +55,43 @@ $result = $stmt->get_result();
     <main class="contenido">
         <h2>El último verano de Silvia Blanch, de Lorena Franco</h2>
         <div class="resenas">
-            <div class="libro">
-                <img src="../img/silvia.jpg" alt="El ultimo verano de Silvia Blanch">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../img/silvia.jpg" alt="Portada Silvia Blanch" />
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="../img/silvia.jpg" alt="Contraportada Silvia Blanch" />
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <p>Con una sinopsis trepidante y un ritmo ágil y elegante, encontramos una historia escalofriante, que
-                promete sorprender al lector en multitud de ocasiones. <br> Y es que la pluma de Lorena Franco es única
-                y
-                promete enganchar al lector de principio a fin. Y, ¿para qué negarlo? ¿cuántos thrillers han logrado
-                volver loco al lector?</p>
 
-            <p> El último verano de Silvia Blanch consta de 318 páginas. Comencé a leer casi cien páginas por día, ¿la
+        </div>
+        <div class="cuadro-resena">
+            <p>
+                Con una sinopsis trepidante y un ritmo ágil y elegante, encontramos una historia escalofriante, que
+                promete sorprender al lector en multitud de ocasiones. <br> Y es que la pluma de Lorena Franco es única
+                y promete enganchar al lector de principio a fin. Y, ¿para qué negarlo? ¿cuántos thrillers han logrado
+                volver loco al lector?
+            </p>
+
+            <p>
+                El último verano de Silvia Blanch consta de 318 páginas. Comencé a leer casi cien páginas por día, ¿la
                 razón?, llegar a un punto de la trama que provocaba al lector a quedarse una noche en vela leyendo. Los
-                capítulos están titulados, por lo que no sabemos cuál es el número exacto. Lo que si sabemos, es que la
-                extensión de los capítulos está entre 2 y 6 páginas.Dependiendo de la voz que narre la historia.</p>
-            <br>
-            <p> Es una
-                trama contada a varias voces, Alejandra Duarte, Silvia Blanch y Jan Blanch, entre otros. Nos encontramos
+                capítulos están titulados, por lo que no sabemos cuál es el número exacto. Lo que sí sabemos, es que la
+                extensión de los capítulos está entre 2 y 6 páginas. Dependiendo de la voz que narre la historia.
+            </p>
+
+            <p>
+                Es una trama contada a varias voces: Alejandra Duarte, Silvia Blanch y Jan Blanch, entre otros. Nos
+                encontramos
                 en el pueblo de Montseny. Hace un año exacto, desapareció Silvia Blanch. Alejandra Duarte, periodista de
-                Barcelona ahora, es seleccionada para redactar un artículo en dicho pueblo, entrevistando así a sus
+                Barcelona, es seleccionada para redactar un artículo en dicho pueblo, entrevistando así a sus
                 familiares y gente de la zona que conoció a la desaparecida Silvia. En este misterioso pueblo, todo el
                 mundo miente y esconde algo.
             </p>
         </div>
+
 
         <!-- Comentarios -->
         <section class="comentarios">
