@@ -1,69 +1,50 @@
 /* login.css */
 body {
-  margin: 0;
-  padding: 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background: #f4e7e7;
-  height: 100vh;
+  margin: 0;
+  background-color: #f4e7e7;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header .banner img {
-  display: block;
-  width: 105%;
-  height: 350px;
-  box-shadow: 0px 0px 40px #dea1ca;
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    box-shadow: 0px 0px 40px #dea1ca;
 }
 
 .banner {
   position: relative;
+  width: 100%;
 }
 
-.rrss {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  display: flex;
-  gap: 10px;
-  z-index: 10;
-}
-
-.banner .rrss img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 3px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  transition: transform 0.3s ease;
-}
-
-.rrss img:hover {
-  transform: scale(1.2);
-}
-
+/* Menu */
 .menu {
   display: flex;
-  gap: 4vw;
   justify-content: center;
   background: linear-gradient(to bottom, #fffefe, #f3bae0);
   border-radius: 5px;
+  height: 60px;
+  align-items: center;
+  padding: 0 10px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 4vw;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #191919;
+  padding: 10px;
 }
-
 
 /* Main content */
 .contenido {
@@ -74,6 +55,7 @@ nav ul li a {
   padding: 60px;
 }
 
+/* Login form */
 .login-container {
   background-color: #ffffff;
   width: 400px;
@@ -81,8 +63,7 @@ nav ul li a {
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-left: 35%;
-  margin-top: 20px;
+  margin: 40px auto;
 }
 
 .login-container h2 {
@@ -129,6 +110,69 @@ nav ul li a {
 footer {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
   background-color: #f8e7f2;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 10px;
+}
+
+footer .rrss {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+footer .rrss a {
+  text-decoration: none;
+}
+
+footer .rrss i {
+  font-size: 22px;
+  color: #333;
+  transition: opacity 0.3s ease;
+}
+
+footer .rrss a:hover i {
+  opacity: 0.7;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Stack menu vertically on small screens */
+  .menu {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Adjust login form */
+  .login-container {
+    width: 90%;
+    padding: 25px;
+    margin: 30px auto;
+  }
+
+  /* Footer responsiveness */
+  footer {
+    flex-direction: column;
+    font-size: 13px;
+  }
+
+  footer .rrss {
+    justify-content: center;
+    margin-top: 10px;
+  }
 }
