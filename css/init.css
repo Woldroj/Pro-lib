@@ -1,3 +1,4 @@
+/* Base */
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
@@ -81,6 +82,59 @@ nav ul li a {
   margin-top: 10px;
 }
 
+/* Formulario de contacto */
+.form-container {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 40px auto;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 14px;
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #b36d6d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #a55b5b;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -115,7 +169,7 @@ footer {
   opacity: 0.7;
 }
 
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
@@ -140,6 +194,12 @@ footer {
     padding: 15px;
   }
 
+  .form-container {
+    width: 90%;
+    padding: 25px;
+    margin: 30px auto;
+  }
+
   .rrss {
     justify-content: center;
     flex-wrap: wrap;
@@ -152,3 +212,4 @@ footer {
     font-size: 13px;
   }
 }
+
